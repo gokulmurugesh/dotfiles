@@ -1,0 +1,7 @@
+alias upg="sudo dnf upgrade"
+alias dnf="sudo dnf"
+export PATH="~/.local/bin:$PATH"
+alias fedora-installed="vim ~/Documents/fedora-install"
+alias untar="tar -xvf"
+alias swayconfig="vim ~/.config/sway/config"
+alias bashrc="vim ~/.bashrc"
