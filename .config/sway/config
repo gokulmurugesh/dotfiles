@@ -218,4 +218,8 @@ bar {
 bindsym Print exec grim - $(xdg-user-dir PICTURES)/$(date +'Screenshot_from_%Y-%m-%d_%H-%M-%S_grim.png') | wl-copy -t image/png
 bindsym Shift+Print exec grim -g "$(slurp)" - $(xdg-user-dir PICTURES)/$(date +'Screenshot_from_%Y-%m-%d_%H-%M-%S_grim.png') | wl-copy -t image/png
 
+# Monitor Brighness
+bindsym $mod+f12 exec ddcutil --bus=1 setvcp 10 + 5
+bindsym $mod+f11 exec ddcutil --bus=1 setvcp 10 - 5
+
 include /etc/sway/config.d/*
