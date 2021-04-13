@@ -222,4 +222,8 @@ bindsym Shift+Print exec grim -g "$(slurp)" - $(xdg-user-dir PICTURES)/$(date +'
 bindsym $mod+f12 exec ddcutil --bus=1 setvcp 10 + 5
 bindsym $mod+f11 exec ddcutil --bus=1 setvcp 10 - 5
 
+# Monitor Contrast
+bindsym shift+$mod+f12 exec ddcutil --bus=1 setvcp 12 + 5
+bindsym shift+$mod+f11 exec ddcutil --bus=1 setvcp 12 - 5
+
 include /etc/sway/config.d/*
