@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/.local/bin:/usr/local/bin:$PATH
+export PATH=$HOME/.local/bin:$HOME/Android/Sdk/platform-tools:/usr/local/bin:$HOME/flutter/bin:$HOME/android-studio/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH="/home/electron/.oh-my-zsh"
@@ -73,6 +73,7 @@ ZSH_THEME="robbyrussell"
 plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
+source /opt/ros/noetic/setup.zsh
 
 # User configuration
 
@@ -97,13 +98,14 @@ source $ZSH/oh-my-zsh.sh
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-alias zshrc="vim ~/.zshrc"
-alias upg="sudo dnf upgrade"
-alias dnf="sudo dnf"
-alias fedora-installed="vim ~/Documents/fedora-install"
-alias untar="tar -xvf"
-alias swayconfig="vim ~/.config/sway/config"
-alias bashrc="vim ~/.bashrc"
-alias session="echo $XDG_SESSION_TYPE"
-alias vimrc="vim ~/.vimrc"
+# alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias scrcpy="ADB=$(which adb) scrcpy"
+alias zshrc="nvim ~/.zshrc"
+alias upg="sudo apt update && sudo apt upgrade"
+alias ai="sudo apt install"
+alias ar="sudo apt remove"
+alias ap="sudo apt purge"
+alias au="sudo apt update"
+alias aup="sudo apt upgrade"
+alias aa="sudo apt autoremove"
