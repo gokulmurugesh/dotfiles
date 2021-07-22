@@ -100,7 +100,7 @@ source /opt/ros/noetic/setup.zsh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias scrcpy="ADB=$(which adb) scrcpy"
+alias scrcpy="ADB=$(which adb) scrcpy" #snap - scrcpy
 alias zshrc="nvim ~/.zshrc"
 alias upg="sudo apt update && sudo apt upgrade"
 alias ai="sudo apt install"
