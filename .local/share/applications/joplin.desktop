@@ -1,0 +1,5 @@
+[Desktop Entry]
+Name=Joplin
+Exec=/home/electron/Apps/Joplin-2.1.8.AppImage
+Type=Application
+Icon=/home/electron/Apps/Icons/joplin.png
