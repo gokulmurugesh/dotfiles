@@ -1,4 +1,4 @@
-export PATH="$HOME/.local/bin:$PATH"
+PATH=$PATH:$HOME/.local/bin
 
 #Fedora
 #alias upg="sudo dnf upgrade"
@@ -7,7 +7,7 @@ alias fedora-installed="vim ~/Documents/fedora-install"
 
 #Debian
 source /usr/share/bash-completion/bash_completion
-export PATH="$HOME/.local/bin:$HOME/flutter/bin:$PATH"
+#export PATH="$HOME/.local/bin:$HOME/flutter/bin:$PATH"
 alias ai="sudo apt install"
 alias ar="sudo apt remove"
 alias aa="sudo apt autoremove"
